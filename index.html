@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair-speak</title>
+    <link rel="shortcut icon" href="./assests/images/fav-icon.png" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/header.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <section class="Top-nav">
+            <div class="container">
+                <div class="top-nav">
+                    <div class="brand">
+                        <a href="index.html"><img src="./assests/images/logo.svg" alt=""></a>
+                    </div>
+                    <nav>
+                        <!-- <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div> -->
+                        <ul class="nav-links">
+                            <li><a id="mainToggle" href="#!">Categories <i id="toggleIcon"
+                                        class="fa-solid nav-icon fa-chevron-up"></i></a></li>
+                            <li><a id="toggleNav" href="#!">Brands <i id="toggleIcontwo"
+                                        class="fa-solid nav-icon fa-chevron-down"></i></a>
+                            </li>
+                            <li><a class="product-link" href="products.html">Products</a></li>
+                            <li><a  href="services.html">Services</a></li>
+                            
+                            <li><a href="#!">Stores </a></li>
+                        </ul>
+                        <div class="search-form">
+                            <form class="search-form" action="#">
+                                <input type="text" placeholder="What Are You Looking For? " name="search">
+                                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div>
+                            <ul class="nav-button">
+                                <li><a id="toggleNav2" class="login-btn profile-nav" href="login.html">Login </a>
+                                    <ul id="dropDown2" class="profile-dropdown">
+                                        <li><a href="profile.html"><img src="./assests/images/profile-nav-icons/profile-01.svg" alt=""> My Profile</a></li>
+                                        <li><a href="my-orders.html"><img src="./assests/images/profile-nav-icons/order-icon.svg" alt=""> Manage Orders</a></li>
+                                        <!-- <li><a href="#"><img src="./assests/images/profile-nav-icons/wallet-icon.svg" alt=""> Hair Speak Wallet</a></li>
+                                        <li><a href="#"><img src="./assests/images/profile-nav-icons/gift-card-01.svg" alt=""> Gift Cards</a></li>
+                                        <li><a href="#"><img src="./assests/images/profile-nav-icons/packages-01.svg" alt=""> My Package</a></li> -->
+                                        <li><a href="my-coupons.html"><img src="./assests/images/profile-nav-icons/coupan-icon.svg" alt=""> My Coupons</a></li>
+                                        <li><a href="manage-address.html"><img src="./assests/images/profile-nav-icons/address-icon-01.svg" alt=""> Manage Address</a></li>
+                                        <li><a href="notifications.html"><img src="./assests/images/profile-nav-icons/notifcation-01.svg" alt=""> Notification</a></li>
+                                        <li><a href="#"><img src="./assests/images/profile-nav-icons/logout-01.svg" alt=""> Log Out</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="favoriate-btn" href="#!"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a class="cart-btn" href="#!"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="Main-nav" id="mainNav">
+            <div class="container">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="makeup.html">MAKEUP</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="face.html">FACE</a></h5>
+                                        <li><a href="#">Face Primer</a></li>
+                                        <li><a href="#">Concealer</a></li>
+                                        <li><a href="#">BB & CC Cream</a></li>
+                                        <li><a href="#">Foundation</a></li>
+                                        <li><a href="#">Compact</a></li>
+                                        <li><a href="#">Blush</a></li>
+                                        <li><a href="#">Bronzer</a></li>
+                                        <li><a href="#">Setting Spray</a></li>
+                                        <li><a href="#">Highlighters & Illuminators</a></li>
+                                        <li><a href="#">Face Palettes And Sets</a></li>
+                                        <li><a href="#">Make-Up Remover</a></li>
+                                        <li><a href="#">Loose Powder</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="eyes.html">EYES</a></h5>
+                                        <li><a href="#">Kajal</a></li>
+                                        <li><a href="#">Eye Palettes & Sets</a></li>
+                                        <li><a href="#">Eyeliner</a></li>
+                                        <li><a href="#">Mascara</a></li>
+                                        <li><a href="#">Eye Shadow</a></li>
+                                        <li><a href="#">Eye Brow Enhancers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="lips.html">LIPS</a></h5>
+                                        <li><a href="#">Lipstick</a></li>
+                                        <li><a href="#">Lip Gloss</a></li>
+                                        <li><a href="#">Lip Balm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="nails.html">NAILS</a></h5>
+                                        <li><a href="#">Nail Polish</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="skincare.html">SKINCARE</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">CLEANSERS & EXFOLIATORS</a></h5>
+                                        <li><a href="#">Face wash</a></li>
+                                        <li><a href="#">Scrubs & Exfoliators</a></li>
+                                        <li><a href="#">Make-Up Remover</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">MOISTURIZERS</a></h5>
+                                        <li><a href="#">Face Moisturizers & Day Creams</a></li>
+                                        <li><a href="#">Tinted Moisturizer</a></li>
+                                        <li><a href="#">Night Creams</a></li>
+                                        <li><a href="#">Anti-Aging</a></li>
+
+                                        <br>
+                                        <h5 class="nav-head"> <a href="#">EYE CARE</a></h5>
+                                        <li><a href="#">Under Eye Cream & Serums</a></li>
+                                        <li><a href="#">Serums</a></li>
+                                        <br>
+                                        <h5 class="nav-head"> <a href="#">LIP CARE</a></h5>
+
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">MASKS & TREATMENT</a></h5>
+                                        <li><a href="#">Serums & Boosters</a></li>
+                                        <li><a href="#">Face Oils</a></li>
+                                        <li><a href="#">Sheet Masks</a></li>
+                                        <li><a href="#">Peels & Masks</a></li>
+                                        <li><a href="#">Serums</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BODY CARE</a></h5>
+                                        <li><a href="#">Hand Cream & Foot Cream</a></li>
+
+                                        <li><a href="#">Hand & Foot Masks</a></li>
+                                        <li><a href="#">Body Loation</a></li>
+                                        <li><a href="#">Massage Oils</a></li>
+                                        <br>
+                                        <h5 class="nav-head"> <a href="#">SUN CARE</a></h5>
+                                        <li><a href="#">Face Sunscreen</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">TONERS & MISTS</a></h5>
+                                        <li><a href="#">Toner</a></li>
+                                        <li><a href="#">Face Mist</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head">SHOP BY CONCERN</h5>
+                                        <li><a href="#">Dull, Uneven Skin</a></li>
+                                        <li><a href="#">Pigmentation</a></li>
+                                        <li><a href="#">Dark Circles</a></li>
+                                        <li><a href="#">Dry Skin</a></li>
+                                        <li><a href="#">Oily Skin</a></li>
+                                        <li><a href="#">Sensitive Skin</a></li>
+                                        <li><a href="#">Anti Acne</a></li>
+                                        <li><a href="#">Anti Aging</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">HAIRCARE</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SHAMPOOS & CONDITIONERS</a></h5>
+                                        <li><a href="#">Shampoo</a></li>
+                                        <li><a href="#">Conditioner</a></li>
+                                        <li><a href="#">Dry Shampoo</a></li>
+                                        <li><a href="#">Leave-In Conditioner</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">HAIR TREATMENT</a></h5>
+                                        <li><a href="#">Hair Masks</a></li>
+                                        <li><a href="#">Hair Serums</a></li>
+                                        <li><a href="#">Hair Oil</a></li>
+                                        <li><a href="#">Scalp Treatments</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">HAIR STYLING</a></h5>
+                                        <li><a href="#">Hair Creams</a></li>
+                                        <li><a href="#">Hair Spray</a></li>
+                                        <li><a href="#">Heat Protection</a></li>
+                                        <li><a href="#">Texturizer</a></li>
+                                        <li><a href="#">Volumizer</a></li>
+                                        <li><a href="#">Gels & Waxes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SHOP BY CONCERN</a></h5>
+                                        <li><a href="#">Hairfall & Thinning</a></li>
+                                        <li><a href="#">Dandruff</a></li>
+                                        <li><a href="#">Dry & Frizzy Hair</a></li>
+                                        <li><a href="#">Damaged Hair</a></li>
+                                        <li><a href="#">Dull Hair</a></li>
+                                        <li><a href="#">Dandruff</a></li>
+                                        <li><a href="#">Dry & Frizzy Hair</a></li>
+                                        <li><a href="#">Damaged Hair</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BUDGET BEAUTY</a></h5>
+                                        <li><a href="#">Combo Sets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">BATH &BODY</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BATH & SHOWER</a></h5>
+                                        <li><a href="#">Body Wash & Shower Gel</a></li>
+                                        <li><a href="#">Body Scrubs & Exfoliators</a></li>
+                                        <li><a href="#">Body Lotions & Body Oils</a></li>
+                                        <li><a href="#">Bath & Body Essentials</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BUDGET BEAUTY</a></h5>
+                                        <li><a href="#">Combo Sets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">FRAGRANCES</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">WOMEN</a></h5>
+                                        <li><a href="#">Eau De Toilette</a></li>
+                                        <li><a href="#">Eau De Parfum</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">MEN</a></h5>
+                                        <li><a href="#">Eau De Toilette</a></li>
+                                        <li><a href="#">Eau De Parfum</a></li>
+                                        <li><a href="#">Deodorants</a></li>
+                                        <li><a href="#">Body Spray</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">UNISEX</a></h5>
+                                        <li><a href="#">Body Spray</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">MEN'S GROOMING</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BEARD CARE</a></h5>
+                                        <li><a href="#">Beard Oil</a></li>
+                                        <li><a href="#">Beard Serum</a></li>
+                                        <li><a href="#">Beard/Moustache Care</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SKIN CARE</a></h5>
+                                        <li><a href="#">Face Wash</a></li>
+                                        <li><a href="#">Moisturizers</a></li>
+                                        <li><a href="#">Skincare</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">HAIR CARE</a></h5>
+                                        <li><a href="#">Shampoo</a></li>
+                                        <li><a href="#">Hair Care</a></li>
+                                        <li><a href="#">Hair Styling</a></li>
+                                        <li><a href="#">Hair Treatments</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">BODY CARE</a></h5>
+                                        <li><a href="#">Bath/Shower Gels</a></li>
+                                        <li><a href="#">Bath & Body Basics</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SHOP BY CONCERN</a></h5>
+                                        <li><a href="#">Hair Fall</a></li>
+                                        <br>
+                                        <h5 class="nav-head"> <a href="#">BUDGET BEAUTY</a></h5>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">SALON SERVICES</a>
+                        <div class="nav-drop-down">
+                            <div class="nav-row">
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">HAIR</a></h5>
+                                        <li><a href="#">Haircut</a></li>
+                                        <li><a href="#">Hair Wash</a></li>
+                                        <li><a href="#">Hair Colour</a></li>
+                                        <li><a href="#">Hair Treatment</a></li>
+                                        <li><a href="#">Kerastase Ritual</a></li>
+                                        <li><a href="#">Texture Service</a></li>
+                                        <li><a href="#">Hair Styling</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SKIN</a></h5>
+                                        <li><a href="#">Threading</a></li>
+                                        <li><a href="#">Waxing</a></li>
+                                        <li><a href="#">Facial - Refresh</a></li>
+                                        <li><a href="#">Facial - Regenerate</a></li>
+                                        <li><a href="#">Facial - Relax</a></li>
+                                        <li><a href="#">Masks - Refresh</a></li>
+                                        <li><a href="#">Masks - Regenerate</a></li>
+                                        <li><a href="#">Masks - Relax</a></li>
+                                        <li><a href="#">Black Mask</a></li>
+                                        <li><a href="#">Eye Care</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">MANI-PEDI</a></h5>
+                                        <li><a href="#">Manicure - Classic</a></li>
+                                        <li><a href="#">Manicure - Premium</a></li>
+                                        <li><a href="#">Manicure - Signature</a></li>
+                                        <li><a href="#">Manicure - Add-On</a></li>
+                                        <li><a href="#">Pedicure - Classic</a></li>
+                                        <li><a href="#">Pedicure - Premium</a></li>
+                                        <li><a href="#">Pedicure - Signature</a></li>
+                                        <li><a href="#">Nails</a></li>
+                                        <li><a href="#">Reflexology</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">SPA</a></h5>
+                                        <li><a href="#">Body Massage</a></li>
+                                        <li><a href="#">Body Polish</a></li>
+                                        <li><a href="#">Body Ritual</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="nav-col">
+                                    <ul>
+                                        <h5 class="nav-head"> <a href="#">MAKE-UP</a></h5>
+                                        <li><a href="#">Interview</a></li>
+                                        <li><a href="#">Party</a></li>
+                                        <li>Bride</li>
+                                        <br>
+                                        <h5 class="nav-head"> <a href="#">BEAUTY LAB</a></h5>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- login -->
+        <!--  -->
+        <!-- brands dropdown -->
+        <div id="dropDown" class="dropdown brands-dropdown">
+            <div class="drop-drown-row">
+                <div class="brand-navs">
+                    <form class="search-form" action="#">
+                        <input type="text" placeholder="What Are You Looking For? " name="search">
+                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="filter-links  text-center ">
+                        <a class="filter-title active" id='All'>All Brands</a>
+                        <a class="filter-title" id='Exlusive'>Exclusive</a>
+                        <a class="filter-title" id='Topbrands'>Top Brand</a>
+                        <a class="filter-title" id='Newin'>New In</a>
+                    </div>
+                </div>
+                <div class="filter-search">
+                    <div class=" filter-div active" id="All">
+                        <div class="all-brands">
+                            <h4>All Brands</h4>
+                            <div class="brands-row">
+
+                                <div class="brands-col">
+                                    <ul>
+                                        <li><a href="#">Abercrombie & Fitch</a></li>
+                                        <li><a href="#">Amazon Series</a></li>
+                                        <li><a href="#">Beverly Hills Polo Club</a></li>
+                                        <li><a href="#">Born Ethical</a></li>
+                                        <li><a href="#">Chambor</a></li>
+                                        <li><a href="#">Cheryl S Cosmeceuticals</a></li>
+                                        <li><a href="#">Coach</a></li>
+                                        <li><a href="#">De Fabulous</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="brands-col">
+                                    <ul>
+                                        <li><a href="#">Abercrombie & Fitch</a></li>
+                                        <li><a href="#">Amazon Series</a></li>
+                                        <li><a href="#">Beverly Hills Polo Club</a></li>
+                                        <li><a href="#">Born Ethical</a></li>
+                                        <li><a href="#">Chambor</a></li>
+                                        <li><a href="#">Cheryl S Cosmeceuticals</a></li>
+                                        <li><a href="#">Coach</a></li>
+                                        <li><a href="#">De Fabulous</a></li>
+                                    </ul>
+                                </div>
+                                <div class="brands-col">
+                                    <ul>
+                                        <li><a href="#">Abercrombie & Fitch</a></li>
+                                        <li><a href="#">Amazon Series</a></li>
+                                        <li><a href="#">Beverly Hills Polo Club</a></li>
+                                        <li><a href="#">Born Ethical</a></li>
+                                        <li><a href="#">Chambor</a></li>
+                                        <li><a href="#">Cheryl S Cosmeceuticals</a></li>
+                                        <li><a href="#">Coach</a></li>
+                                        <li><a href="#">De Fabulous</a></li>
+                                    </ul>
+                                </div>
+                                <div class="brands-col">
+                                    <ul>
+                                        <li><a href="#">Abercrombie & Fitch</a></li>
+                                        <li><a href="#">Amazon Series</a></li>
+                                        <li><a href="#">Beverly Hills Polo Club</a></li>
+                                        <li><a href="#">Born Ethical</a></li>
+                                        <li><a href="#">Chambor</a></li>
+                                        <li><a href="#">Cheryl S Cosmeceuticals</a></li>
+                                        <li><a href="#">Coach</a></li>
+                                        <li><a href="#">De Fabulous</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-div" id="Exlusive">
+                        <h4>Exclusive</h4>
+                        <div class="brands-row">
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/born-ethical.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/coach.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/dyson.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kama.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kenneth.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kerastase.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/loreal.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/milani.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/nyx.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/remy.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/coach.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/dyson.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="filter-div" id="Topbrands">
+                        <h4>Top Brands</h4>
+                        <div class="brands-row">
+
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kenneth.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kerastase.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/loreal.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/milani.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/nyx.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/remy.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/coach.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/dyson.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="filter-div" id="Newin">
+                        <h4>New In</h4>
+                        <div class="brands-row">
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/kerastase.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/loreal.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/milani.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/nyx.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/remy.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/coach.png" alt="">
+                            </a>
+                            <a href="#" class="brands">
+                                <img src="./assests/images/brands/dyson.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
+        <section class="mobile-nav">
+            <div class="mobile-row">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <a href="index.html"><img class="mobile-logo" src="./assests/images/logo.svg" alt=""></a>
+                <div class="mobile-links">
+                    <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="sidenav-links">
+                    <a href="#!"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="mobile-navbar">
+                    <div class="mobile-btn">
+                        <a href="login.html">Login</a>
+                        <a href="registration.html">Register </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <h4 class="nav-head"><a href="#">Categories</a></h4>
+                            <li><a href="#">Makeup</a></li>
+                            <li><a href="#">Skincare</a></li>
+                            <li><a href="#">Haircare</a></li>
+                            <li><a href="#">Bath Body</a></li>
+                            <li><a href="#">Fragrances</a></li>
+                            <li><a href="#">Men's Grooming </a></li>
+                            <li><a href="#">Salon Services</a></li>
+                            <br>
+                            <h4 class="nav-head"><a href="#">Brands</a></h4>
+                            <li><a href="#">All Brands</a></li>
+                            <li><a href="#">Exclusive</a></li>
+                            <li><a href="#">Top Brands</a></li>
+                            <li><a href="#">New In</a></li>
+                            <br>
+                            <h4 class="nav-head"><a href="products.html">Products</a></h4>
+                            <br>
+                            <h4 class="nav-head"><a href="services.html">Services</a></h4>
+                            <br>
+                            <h4 class="nav-head"><a href="#">Store</a></h4>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header ends -->
+    <!-- main -->
+    <main>
+        <section class="banner-wrapper sec1">
+            <div class="">
+                <div class="owl-carousel banner-carousel owl-theme">
+                    <div class="item carousel1">
+                        <div class="container">
+                            <div class="banner-content" data-aos="fade-up" data-aos-duration="3000">
+                                <h1>ULTIMO-24 KARAT GOLD</h1>
+                                <span>FOR YOUNGER LOOKING SKIN</span>
+                                <h2>FROM HAIR SPEAK</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item carousel2">
+                        <div class="container">
+                            <div class="banner-content" data-aos="fade-up" data-aos-duration="3000">
+                                <h1>ULTIMO-24 KARAT GOLD</h1>
+                                <span>FOR YOUNGER LOOKING SKIN</span>
+                                <h2>FROM HAIR SPEAK</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item carousel3">
+                        <div class="container">
+                            <div class="banner-content" data-aos="fade-up" data-aos-duration="3000">
+                                <h1>ULTIMO-24 KARAT GOLD</h1>
+                                <span>FOR YOUNGER LOOKING SKIN</span>
+                                <h2>FROM HAIR SPEAK</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner ends -->
+        <!-- buy your product -->
+        <section class="sec2 buy-products">
+            <div class="container">
+                <div class="product-info-row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="heading text-center">
+                        <h2>Buy Your Products</h2>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box">
+                                <h3>Sulphate Free
+                                    shampoos</h3>
+                                <img class="info-img" src="./assests/images/home-product1.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box">
+                                <h3>Anti-Hairfall
+                                    Superstars</h3>
+                                <img class="info-img" src="./assests/images/home-product2.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box">
+                                <h3>skin brihtening
+                                    cream</h3>
+                                <img class="info-img" src="./assests/images/home-product3.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box">
+                                <h3>BEST FACE
+                                    MOISTURIZERS</h3>
+                                <img class="info-img" src="./assests/images/home-product4.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box">
+                                <h3>Oily Skin
+                                    Formula</h3>
+                                <img class="info-img" src="./assests/images/home-product5.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <div class="product-info-box ">
+                                <h3>FINEST NAIL POLISHES</h3>
+                                <img class="info-img" src="./assests/images/home-product6.jpg" alt="product-info">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- buy products ends -->
+       
+        <!-- serices -->
+        <section class="sec4 service-sec">
+            <div class="container">
+                <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="heading text-center">
+                        <h2><a href="services.html">Book your Services</a> </h2>
+                    </div>
+                    <div class="col-3">
+                        <div class="services text-center">
+                            <img class="img-fluid" src="./assests/images/services/hair-care.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>HAIR CARE</h4>
+                                    <p>+100 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/makeup.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>MAKEUP</h4>
+                                    <p>+10 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/skin.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>SKIN</h4>
+                                    <p>+150 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/hands-feet.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>HANDS & FEET</h4>
+                                    <p>+100 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/pamper.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>PAMPER RITUALS</h4>
+                                    <p>+30 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/nails.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>NAILS</h4>
+                                    <p>+100 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="services">
+                            <img class="img-fluid" src="./assests/images/services/hair-services.jpg" alt="">
+                            <a href="#!" class="service-title">
+                                <div>
+                                    <h4>HOME SERVICES</h4>
+                                    <p>+100 Service</p>
+                                </div>
+                                <img class="service-icon" src="./assests/images/SVG/service-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services ends -->
+         <!-- top-recomendation -->
+         <section class="sec3 top-recommentaion">
+            <div class="container">
+                <div class="product-info-row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="heading text-center">
+                        <h2>Top Offers in Hair</h2>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="white-product-box">
+                                <div class="product-img">
+                                    <img class="product" src="./assests/images/hair-products/product1.jpg" alt="hair">
+                                </div>
+                                <div class="product-details">
+                                    <div class="ratings">
+                                        <h4>5<i class="fa-solid fa-star"></i></h4> | <span>527</span>
+                                    </div>
+                                    <h4 class="title">Root Deep Shampoo for Preventing Hair Loss, 200 ml</h4>
+                                    <p class="price"><strong>Rs. 2730</strong></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="white-product-box">
+                                <div class="product-img">
+                                    <img class="product" src="./assests/images/hair-products/product2.jpg" alt="hair">
+                                </div>
+                                <div class="product-details">
+                                    <div class="ratings">
+                                        <h4>5<i class="fa-solid fa-star"></i></h4> | <span>527</span>
+                                    </div>
+                                    <h4 class="title">Kerastase Genesis Fondant Renforcateur Conditioner, 200 ml</h4>
+                                    <p class="price"><strong>Rs. 2000</strong></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="white-product-box">
+                                <div class="product-img">
+                                    <img class="product" src="./assests/images/hair-products/product3.jpg" alt="hair">
+                                </div>
+                                <div class="product-details">
+                                    <div class="ratings">
+                                        <h4>5<i class="fa-solid fa-star"></i></h4> | <span>527</span>
+                                    </div>
+                                    <h4 class="title">Loreal Professionnel Pro Longer Lengths Renewing Shampoo, 300</h4>
+                                    <p class="price"><strong>Rs. 2295</strong></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">
+                            <div class="white-product-box">
+                                <div class="product-img">
+                                    <img class="product" src="./assests/images/hair-products/product4.jpg" alt="hair">
+                                </div>
+                                <div class="product-details">
+                                    <div class="ratings">
+                                        <h4>5<i class="fa-solid fa-star"></i></h4> | <span>527</span>
+                                    </div>
+                                    <h4 class="title">Kerastase Genesis Serum Anti-Chute Fortifiant, 90 ml</h4>
+                                    <p class="price"><strong>Rs. 3330</strong></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top recomendation -->
+        <!-- facial-description -->
+        <section class="sec5 facial-sec">
+            <div class="container facial-container" data-aos="fade-up" data-aos-duration="3000">
+                <div class="heading text-center">
+                    <h2>Top Offers in Skin</h2>
+                </div>
+                <div class="projects ">
+                    <div class="project-section text-center">
+                        <div class="project-links">
+                            <a class="project-title active" id='Preminum'>
+                                <div class="links-div">PREMIEUM</div>
+                            </a>
+                            <a class="project-title" id='Mid'>
+                                <div class="links-div">MID</div>
+                            </a>
+                            <a class="project-title" id='Basic'>
+                                <div class="links-div">BASIC</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="facial-products">
+                    <div class="project-1 active" id="Preminum">
+                        <div class=" owl-carousel owl-theme facialProducts">
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/1.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>BULGARIAN ROSE <span>(GLOW & BRIGHTENING) </span> </h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 3499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/3.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 4499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-1" id="Mid">
+                        <div class=" owl-carousel owl-theme facialProducts">
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/3.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 4499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/1.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>BULGARIAN ROSE <span>(GLOW & BRIGHTENING) </span> </h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 3499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-1" id="Basic">
+                        <div class=" owl-carousel owl-theme facialProducts">
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>BULGARIAN ROSE <span>(GLOW & BRIGHTENING) </span> </h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 3499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/1.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/3.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 4499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="facial-products-box">
+                                    <div class="facial-img">
+                                        <img class="img-fluid" src="./assests/images/facial-products/2.jpg" alt="">
+                                    </div>
+                                    <div class="facial-product-title">
+                                        <h4>ULTIMO-24 KARAT GOLD</h4>
+                                        <p>(70 Units)</p>
+                                        <div class="price">
+                                            <p><b>Rs. 5499/-</b></p>
+                                            <a href="#!"><img src="./assests/images/SVG/service-arrow.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div">
+                    <center>
+                        <a class="btn1" href="#">KNOW MORE</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+        <!-- facial products ends -->
+        <!-- top offers and gifts -->
+        <section class="sec6 top-offers">
+            <div class="container">
+                <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="heading text-center">
+                        <h2>Top Recomendation For You</h2>
+                    </div>
+                    <div class="col-3">
+                        <div class="pink-box">
+                            <img class="img-fluid" src="./assests/images/top-brands/1.jpg" alt="">
+                            <div class="pink-box-title">
+                                <h4>Surprise gift from</h4>
+                                <p>The Face Shop</p>
+                                <div class="pink-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pink-box">
+                            <img class="img-fluid" src="./assests/images/top-brands/2.jpg" alt="">
+                            <div class="pink-box-title">
+                                <h4>Surprise gift on every</h4>
+                                <p>Kama Ayurveda purchase</p>
+                                <div class="pink-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pink-box">
+                            <img class="img-fluid" src="./assests/images/top-brands/3.jpg" alt="">
+                            <div class="pink-box-title">
+                                <h4>Get 30% off</h4>
+                                <p>On spends worth Rs. 1500 & above</p>
+                                <div class="pink-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="pink-box">
+                            <img class="img-fluid" src="./assests/images/top-brands/4.jpg" alt="">
+                            <div class="pink-box-title">
+                                <h4>Glam up with a Lipstick Combo</h4>
+                                <p>On spends worth Rs. 1499 & above</p>
+                                <div class="pink-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top offers and gifts -->
+        <!-- special offers -->
+        <section class="sec7 special-offer-sec">
+            <div class="container special-offer-container">
+                <div class="centered-row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-4">
+                        <img class="special-offer-img" src="./assests/images/offer-pic1-06.svg" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="special-heading">
+                            <h2>Get Extra Benefits <br>
+                                <span>
+                                    On <strong>VALUES & SERVICES </strong><br>
+                                </span>
+                                Packages
+                            </h2>
+                            <div class="btn-div">
+                                <a class="btn2" href="#">EXPLORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- special offers ends -->
+        <!-- more offer  -->
+        <section class="sec8 more-offers">
+            <div class="container">
+                <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="heading text-center">
+                        <h2>Top Offers for you</h2>
+                    </div>
+                    <div class="col-3">
+                        <div class="gradient-box">
+                            <img class="img-fluid" src="./assests/images/more-offers/1.jpg" alt="">
+                            <div class="gradient-box-title">
+                                <h4>Matte Lipstick <br> under Rs.1000</h4>
+                                <div class="gradient-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gradient-box">
+                            <img class="img-fluid" src="./assests/images/more-offers/2.jpg" alt="">
+                            <div class="gradient-box-title">
+                                <h4>Skin & Hair Loving Avocado Treats</h4>
+                                <div class="gradient-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gradient-box">
+                            <img class="img-fluid" src="./assests/images/more-offers/3.jpg" alt="">
+                            <div class="gradient-box-title">
+                                <h4>Selling Fast Best Of Kerastase</h4>
+                                <div class="gradient-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gradient-box">
+                            <img class="img-fluid" src="./assests/images/more-offers/4.jpg" alt="">
+                            <div class="gradient-box-title">
+                                <h4>No Makeup- <br> Makeup Looks</h4>
+                                <div class="gradient-box-link">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- more offer ends -->
+        <!-- members -->
+        <section class="sec9 members-sec">
+            <div class="container members-container" data-aos="fade-up" data-aos-duration="3000">
+                <div class="centered-row">
+                    <div class="col-6 ">
+                        <div class="members-img">
+                            <img src="./assests/images/members.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="members-title">
+                            <h2>Being an HairSpeak <br>
+                                member has its perk</h2>
+                        </div>
+                        <div class="members-icon">
+                            <a href="#"><img class="icon" src="./assests/images/member-icon1.svg" alt=""></a>
+                            <a href="#"><img class="icon" src="./assests/images/member-icon2.svg" alt=""></a>
+                            <a href="#"><img class="icon" src="./assests/images/member-icon3.svg" alt=""></a>
+                            <a href="#"><img class="icon" src="./assests/images/member-icon4.svg" alt=""></a>
+                        </div>
+                        <div class="btn-div">
+                            <a class="btn2" href="#">BECOME A MEMBER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- safety section -->
+        <section class="sec9 safety-sec">
+            <div class="container">
+                <div class="safety-div">
+                    <p>We are following all Hygiene Standards To Ensure Safe Delivery Of Your Essentials</p>
+                    <img class="safety-img" src="./assests/images/SVG/man.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- safety section ends -->
+        <!-- benefits  -->
+        <section class="sec10 benefits-sec">
+            <div class="benefits-row">
+                <div class="benefits">
+                    <img src="./assests/images/truck-01.svg" alt="">
+                    <h4>FREE SHIPPING</h4>
+                    <p>Above Rs.70</p>
+                </div>
+                <div class="benefits">
+                    <img src="./assests/images/award-icon-01.svg" alt="">
+                    <h4>100% GENIUNE</h4>
+                    <p>Products</p>
+                </div>
+                <div class="benefits">
+                    <img src="./assests/images/price-tag-01.svg" alt="">
+                    <h4>PROFFESIONAL CARE</h4>
+                    <p>& Beauty Brands</p>
+                </div>
+                <div class="benefits">
+                    <img src="./assests/images/beauty-01.svg" alt="">
+                    <h4>350+ BEAUTY</h4>
+                    <p>Services @80+ Salons </p>
+                </div>
+                <div class="benefits">
+                    <img src="./assests/images/reward-icon-01.svg" alt="">
+                    <h4>EARN REWARD POINTS</h4>
+                    <p>With Every Purchase</p>
+                </div>
+            </div>
+        </section>
+        <!-- benefits ends -->
+    </main>
+    <!-- main ends -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light">
+                <div class="col-4">
+                    <div class="news-letter">
+                        <h4>Stay In The Know.</h4>
+                        <p>Sign Up For Enrich Emails</p>
+                        <form action="#">
+                            <input type="email" placeholder="enter you email id" name="email" id="email"> <br>
+                            <input class="signUp-btn" type="button" value="Sign Up">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-links">
+                        <h4>Contact Details</h4>
+                        <ul>
+                            <li><a href="tel:08041125305">BTM LAYOUT <span>: 080 41125305</span></a></li>
+                            <li><a href="tel:08041125305">HSR LAYOUT <span>: 080 41144232</span></a></li>
+                            <li><a href="tel:08041125305">JAYANAGAR 3rd BLOCK <span>: 080 41110452</span></a></li>
+                            <li><a href="tel:08041125305">JP NAGAR 2nd Phase <span>: 080 41525255</span></a></li>
+                            <li><a href="tel:08041125305">JP NAGAR 7th Phase <span>: 080 48656745</span></a></li>
+                            <li><a href="tel:08041125305">VIJAYA BANK LAYOUT <span>: 080 43026050</span></a></li>
+                            <li><a href="tel:">KORAMANGALA <span>: 080 43756277</span></a></li>
+                            <li><a href="tel:">BELLANDUR <span>: 080 43791880</span></a></li>
+                            <!-- <li><a href="tel:">ELECTRONIC CITY <span>: 8884442537</span></a></li>
+                            <li><a href="tel:">BEGUR ROAD <span>: 8884445376</span></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-links">
+                        <h4>Address</h4>
+                        <address>
+                            #773, 7th Cross Road, 16th Main Road, 2nd floor, <br>
+                            Opp. Hotel Swadhist Aahar, BTM 2nd Stage,
+                            Benguluru, Karnataka 560076.
+                        </address> <br>
+                        <a href="#">Ph: 0804151 2548 / 8884442671</a> <br> <br>
+                        <a href="#">www.hairspeakindia.com</a>
+                        <br>
+                        <h4>Show us some love</h4>
+                        <div class="social-media-links">
+                            <a href="#"><img src="./assests/images/SVG/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./assests/images/SVG/google.svg" alt=""></a>
+                            <a href="#"><img src="./assests/images/SVG/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./assests/images/SVG/insta.svg" alt=""></a>
+                            <a href="#"><img src="./assests/images/SVG/linkedin.svg" alt=""></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer">
+        <div class="container footer-row">
+            <p>&copy; All Rights Reserved - Hairspeak 2023</p>
+            <p>Designed by <a target="_blank" href="https://www.dotline.in">Dotline</a></p>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js -->
+    <script src="./assests/js/main.js"></script>
+</body>
+
+</html>
